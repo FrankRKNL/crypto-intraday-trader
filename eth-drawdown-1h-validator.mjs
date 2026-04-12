@@ -31,10 +31,13 @@ const LOGS_DIR = join(BASE_DIR, 'logs-drawdown-1h');
 // Config
 const ASSET = 'ETHUSDT';
 const BTC_ASSET = 'BTCUSDT';
-const MIN_DD = 4.0;        // >= 4% drop
+const MIN_DD = 5.0;        // >= 5% drop (sweet spot: 5-7% has 85%+ WR)
+const MAX_DD = 999;        // No max (or set 7.0 for stricter)
 const LOOKBACK = 4;        // 4 consecutive 1H candles
 const HOLD = 8;            // Hold 8 hours (8 candles)
 const RED_CANDLE = true;   // Last candle must close red
+const BLOCK_US_HOURS = true; // Block 16-20 UTC (US market, weaker WR)
+const BTC_MAX_DD = 3.0;   // Skip if BTC drops >3% in same window (too risky)
 const POLL_MS = 5 * 60 * 1000;  // Poll every 5 minutes
 const EQUITY = 10000;      // Paper money per asset
 
@@ -88,7 +91,7 @@ function checkSignal(eth, btc, currentIndex) {
   const startPrice = lookback[0].o;
   const endPrice = lookback[LOOKBACK - 1].c;
   const dd = (startPrice - endPrice) / startPrice * 100;
-  if (dd < MIN_DD) return null;
+  if (dd < MIN_DD || dd > MAX_DD) return null;
   
   // All candles must be down
   const allDown = lookback.every(c => c.c < c.o);
@@ -96,6 +99,23 @@ function checkSignal(eth, btc, currentIndex) {
   
   // Last candle must close red
   if (RED_CANDLE && lookback[LOOKBACK - 1].c >= lookback[LOOKBACK - 1].o) return null;
+  
+  // Block US market hours (16-20 UTC)
+  if (BLOCK_US_HOURS) {
+    const h = new Date(eth[currentIndex].t).getUTCHours();
+    if (h >= 16 && h < 20) return null;
+  }
+  
+  // BTC filter: skip if BTC drops >3% (macro dump = too risky)
+  if (BTC_MAX_DD > 0) {
+    const btcLookback = btc.slice(currentIndex - LOOKBACK, currentIndex);
+    if (btcLookback.length >= LOOKBACK) {
+      const btcStart = btcLookback[0].o;
+      const btcEnd = btcLookback[LOOKBACK - 1].c;
+      const btcDD = (btcStart - btcEnd) / btcStart * 100;
+      if (btcDD > BTC_MAX_DD) return null;
+    }
+  }
   
   return {
     dd,
