@@ -1,0 +1,57 @@
+{
+  "config": {
+    "hvPeriod": 20,
+    "hvPercentile": 0.3,
+    "bodyPeriod": 100,
+    "bodyPercentile": 0.85,
+    "bodyMinPct": 0.15,
+    "volumeSmaPeriod": 10,
+    "volumeMultiplier": 1.5,
+    "sessionFilter": true,
+    "londonOpen": 7,
+    "londonClose": 12,
+    "nyOpen": 13,
+    "nyClose": 17,
+    "atrPeriod": 14,
+    "atrStop": 2,
+    "atrTarget": 3,
+    "maxHoldMinutes": 240,
+    "feesBps": 10,
+    "slippageBps": 5
+  },
+  "btc": {
+    "stats": {
+      "n": 1,
+      "wins": 0,
+      "losses": 1,
+      "wr": "0.0",
+      "pnl": -0.674,
+      "avg": "-0.6739"
+    },
+    "trades": [
+      {
+        "t": "13:30",
+        "d": "SHORT",
+        "ep": 70892,
+        "net": -0.674,
+        "gross": -0.524,
+        "r": 0.524,
+        "exit": "sl",
+        "vol": 2.84,
+        "body": 0.305,
+        "hv": 0.2369
+      }
+    ]
+  },
+  "eth": {
+    "stats": {
+      "n": 0,
+      "wins": 0,
+      "losses": 0,
+      "wr": "0",
+      "pnl": 0,
+      "avg": "0"
+    },
+    "trades": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "config": {
+    "hvPeriod": 20,
+    "hvPercentile": 0.3,
+    "bodyPercentile": 0.85,
+    "bodyMinPct": 0.15,
+    "volumeSmaPeriod": 10,
+    "volumeMultiplier": 1.5,
+    "sessionFilter": true,
+    "londonOpen": 7,
+    "londonClose": 12,
+    "nyOpen": 13,
+    "nyClose": 17,
+    "atrPeriod": 14,
+    "atrStopMultiplier": 2,
+    "atrTargetMultiplier": 3,
+    "maxHoldMinutes": 240,
+    "feesBps": 10,
+    "slippageBps": 5,
+    "bodyLookback": 100
+  },
+  "btc": {
+    "stats": {
+      "totalTrades": 0,
+      "wins": 0,
+      "losses": 0,
+      "winRate": "0",
+      "totalPnlPct": 0,
+      "avgPnlPct": "0"
+    },
+    "trades": []
+  },
+  "eth": {
+    "stats": {
+      "totalTrades": 0,
+      "wins": 0,
+      "losses": 0,
+      "winRate": "0",
+      "totalPnlPct": 0,
+      "avgPnlPct": "0"
+    },
+    "trades": []
+  },
+  "timestamp": "2026-04-12T09:57:00.977Z"
+}
