@@ -219,3 +219,60 @@ GLM-5.1 was actief betrokken bij de research als kritische sparringpartner:
 *Rapport opgesteld: 2026-04-12*
 *Research door: MiniMax-M2.7 + GLM-5.1*
 *Repo: github.com/FrankRKNL/crypto-intraday-trader*
+
+---
+
+## APPENDIX: Speed Filter Discovery (2026-04-13 00:00 UTC)
+
+### The Pattern: Capitulation
+Fast initial drop + slow grinding down = best entry timing
+
+**Speed Ratio Definition:**
+- earlyDD = % drop in first half of lookback
+- lateDD = % drop in second half of lookback  
+- speedRatio = earlyDD / lateDD
+
+**Example:** ETH drops 4% in first 2h, then 2% in next 2h → speedRatio = 2.0
+
+### Results by Speed Threshold
+
+| Speed | n | WR | Avg | Median |
+|-------|---|-----|-----|--------|
+| > 0.5 | 38 | 65.8% | +0.85% | +0.95% |
+| > 1.0 | 38 | 65.8% | +0.85% | +0.95% |
+| > 1.5 | 34 | 64.7% | +0.73% | +0.65% |
+| > 2.0 | 15 | 80.0% | +1.66% | +1.47% |
+| > 2.5 | 12 | 75.0% | +1.39% | +1.39% |
+| > 3.0 | 10 | 80.0% | +1.81% | - |
+
+### Best Configs with Speed Filter
+
+| Config | n | WR | Avg | P1 | P2 |
+|--------|---|-----|-----|----|----|
+| Speed>1 + DD>=5% + Block US | 19 | 78.9% | +1.98% | +0.87 | +2.63 |
+| Speed>1 + DD>=6% + Block US | 8 | 75.0% | +2.09% | +0.13 | +3.27 |
+| Speed>1.5 + DD>=5% + Block US | 16 | 75.0% | +1.72% | +0.87 | +2.39 |
+| Speed>2 + DD>=6% | 5 | 100% | +3.34% | ? | ? |
+
+### Extended Hold Test (Speed>1.5, DD>=6%, Block US)
+
+| Hold | n | WR | Avg |
+|------|---|-----|-----|
+| 8h | 7 | 71.4% | +1.71% |
+| 12h | 7 | 71.4% | +1.61% |
+| 16h | 7 | 71.4% | +2.02% |
+| 24h | 7 | 85.7% | +4.78% |
+
+**Interpretation:** Longer holds capture more recovery. 24h hold nearly triples the return.
+
+### Key Insight
+The speed filter identifies TRUE capitulation vs gradual decline. 
+- Fast initial drop = panic/fear driven
+- Slow grinding = exhaustion/absorption
+- The bounce happens when panic buyers get stopped out but smart money accumulates
+
+### Validators
+- PID 5469: Speed filter validator (DD>=6%, Speed>2, Block US)
+- PID 5122: Optimized validator (DD>=6%, Block US/Fri)
+- PID 3500: Original drawdown validator
+- PID 223: RO15 live
