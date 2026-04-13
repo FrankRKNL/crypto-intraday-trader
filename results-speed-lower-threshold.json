@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-04-13T00:12:58.918Z",
+  "totalBaseTrades": 46,
+  "bestConfigTrades": [
+    {
+      "idx": 865,
+      "time": "2025-05-18T20:00:00.000Z",
+      "dd": 6.62,
+      "speedRatio": 2.12,
+      "hour": 20,
+      "dayOfWeek": 0,
+      "pnl": -1.76,
+      "win": false
+    },
+    {
+      "idx": 866,
+      "time": "2025-05-18T21:00:00.000Z",
+      "dd": 6.99,
+      "speedRatio": 11.51,
+      "hour": 21,
+      "dayOfWeek": 0,
+      "pnl": -0.631,
+      "win": false
+    },
+    {
+      "idx": 1472,
+      "time": "2025-06-13T03:00:00.000Z",
+      "dd": 6.2,
+      "speedRatio": 6.49,
+      "hour": 3,
+      "dayOfWeek": 5,
+      "pnl": 2.794,
+      "win": true
+    },
+    {
+      "idx": 4945,
+      "time": "2025-11-04T20:00:00.000Z",
+      "dd": 7.89,
+      "speedRatio": 2.82,
+      "hour": 20,
+      "dayOfWeek": 2,
+      "pnl": 3.05,
+      "win": true
+    },
+    {
+      "idx": 4946,
+      "time": "2025-11-04T21:00:00.000Z",
+      "dd": 6.3,
+      "speedRatio": 11.41,
+      "hour": 21,
+      "dayOfWeek": 2,
+      "pnl": 3.504,
+      "win": true
+    },
+    {
+      "idx": 5576,
+      "time": "2025-12-01T03:00:00.000Z",
+      "dd": 6.45,
+      "speedRatio": 14.12,
+      "hour": 3,
+      "dayOfWeek": 1,
+      "pnl": 0.015,
+      "win": true
+    },
+    {
+      "idx": 6001,
+      "time": "2025-12-18T20:00:00.000Z",
+      "dd": 6.18,
+      "speedRatio": 3.01,
+      "hour": 20,
+      "dayOfWeek": 4,
+      "pnl": 5.004,
+      "win": true
+    }
+  ]
+}

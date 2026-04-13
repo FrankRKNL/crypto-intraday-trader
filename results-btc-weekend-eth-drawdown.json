@@ -1,0 +1,31 @@
+{
+  "combined": [
+    {
+      "date": "2025-12-01",
+      "btcDrop": "-4.6",
+      "ethDD": "6.4",
+      "btcPnl": "5.69",
+      "ethPnl": "0.11",
+      "totalPnl": "5.80",
+      "win": true
+    },
+    {
+      "date": "2025-12-01",
+      "btcDrop": "-4.9",
+      "ethDD": "6.5",
+      "btcPnl": "7.13",
+      "ethPnl": "0.02",
+      "totalPnl": "7.14",
+      "win": true
+    },
+    {
+      "date": "2025-12-01",
+      "btcDrop": "-5.3",
+      "ethDD": "5.5",
+      "btcPnl": "7.24",
+      "ethPnl": "-0.17",
+      "totalPnl": "7.08",
+      "win": false
+    }
+  ]
+}

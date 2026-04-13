@@ -1,0 +1,30 @@
+[
+  {
+    "label": "BASELINE Drawdown (DD>=5%, no weekend filter)",
+    "n": 22,
+    "wr": "77.3",
+    "avg": "1.736",
+    "median": "2.542"
+  },
+  {
+    "label": "MONDAY ONLY (no weekend drop filter)",
+    "n": 5,
+    "wr": "80.0",
+    "avg": "0.646",
+    "median": "0.112"
+  },
+  {
+    "label": "MONDAY ONLY (BTC dropped >3% weekend)",
+    "n": 5,
+    "wr": "80.0",
+    "avg": "0.646",
+    "median": "0.112"
+  },
+  {
+    "label": "MONDAY ONLY (DD>=4%, BTC dropped >2% weekend)",
+    "n": 9,
+    "wr": "88.9",
+    "avg": "1.153",
+    "median": "0.317"
+  }
+]

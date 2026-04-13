@@ -1,22 +1,22 @@
 {
   "strategy": "ETH Drawdown Recovery 1H",
   "config": {
-    "MIN_DD": 4,
+    "MIN_DD": 5,
     "LOOKBACK": 4,
     "HOLD": 8,
     "RED_CANDLE": true
   },
   "results": {
-    "n": 50,
-    "wr": "72.0",
-    "avg": "1.006",
-    "median": "0.661",
-    "avgWin": "2.072",
-    "avgLoss": "-1.736",
-    "rr": "1.19",
-    "p1": "0.782",
-    "p2": "1.230",
-    "annualized": "55.1"
+    "n": 13,
+    "wr": "76.9",
+    "avg": "1.546",
+    "median": "1.531",
+    "avgWin": "2.720",
+    "avgLoss": "-2.370",
+    "rr": "1.15",
+    "p1": "-0.300",
+    "p2": "3.127",
+    "annualized": "22.0"
   },
   "period": {
     "start": 1744484400000,
