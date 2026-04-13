@@ -1,0 +1,7 @@
+[2026-04-13T00:05:08.498Z] === ETH Drawdown Recovery OPTIMIZED Validator v2 ===
+[2026-04-13T00:05:08.504Z] Config: DD>=6%, 4h lookback, 8h hold
+[2026-04-13T00:05:08.505Z] Filters: Red candle, Block US hours=true, Block Friday=true
+[2026-04-13T00:05:08.505Z] Paper trading mode, equity: $10000
+
+[2026-04-13T00:05:08.570Z] Loaded 8000 cached ETH candles
+[2026-04-13T00:05:09.134Z] New candles: ETH=10, BTC=10

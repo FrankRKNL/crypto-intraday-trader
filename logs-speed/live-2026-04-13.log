@@ -1,0 +1,9 @@
+[2026-04-13T00:09:55.841Z] === ETH Drawdown Recovery SPEED FILTER Validator v3 ===
+[2026-04-13T00:09:55.843Z] Config: DD>=6%, Speed>2, 4h lookback, 8h hold
+[2026-04-13T00:09:55.843Z] Filters: Red candle, Speed filter (capitulation), Block US hours=true
+[2026-04-13T00:09:55.843Z] Paper trading mode, equity: $10000
+
+[2026-04-13T00:09:55.853Z] Loaded 8000 cached ETH candles
+[2026-04-13T00:09:56.271Z] New candles: 10
+6-04-13T00:09:55.853Z] Loaded 8000 cached ETH candles
+[2026-04-13T00:09:56.271Z] New candles: 10

@@ -1,0 +1,16 @@
+[2026-04-12T23:59:47.304Z] Running backtest...
+[2026-04-12T23:59:47.329Z] Backtesting 8000 candles...
+[2026-04-12T23:59:47.343Z] 
+=== BACKTEST RESULTS ===
+[2026-04-12T23:59:47.344Z] Trades: 9 | WR: 77.8% | Avg: 1.845%
+[2026-04-12T23:59:47.344Z] Filters: DD>=6%, Red candle, Block US=true, Block Fri=true
+[2026-04-12T23:59:47.344Z] P1: 3 trades, avg=0.050%
+[2026-04-12T23:59:47.345Z] P2: 6 trades, avg=2.742%
+[2026-04-12T23:59:47.345Z] Saved detailed results
+[2026-04-12T23:59:57.679Z] === ETH Drawdown Recovery OPTIMIZED Validator v2 ===
+[2026-04-12T23:59:57.684Z] Config: DD>=6%, 4h lookback, 8h hold
+[2026-04-12T23:59:57.684Z] Filters: Red candle, Block US hours=true, Block Friday=true
+[2026-04-12T23:59:57.685Z] Paper trading mode, equity: $10000
+
+[2026-04-12T23:59:57.715Z] Loaded 8000 cached ETH candles
+[2026-04-12T23:59:58.139Z] New candles: ETH=10, BTC=10

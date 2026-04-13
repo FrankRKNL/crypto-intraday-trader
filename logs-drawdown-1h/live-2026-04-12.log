@@ -1,0 +1,12 @@
+
+=== LIVE MODE: ETH Drawdown Recovery 1H ===
+Paper trading. Monitoring 1H candles...
+DD>=5%, 4h lookback, 8h hold
+
+[2026-04-12T23:06:07.456Z] Loaded 8000 cached ETH candles
+[2026-04-12T23:06:08.094Z] New 100 candle(s). Current price: 2193.61
+[2026-04-12T23:06:08.139Z] STATUS | FLAT | Trades: 0 (0W/0L) | Equity: $10000.00 | PnL: 0.00%
+[2026-04-12T23:36:11.223Z] STATUS | FLAT | Trades: 0 (0W/0L) | Equity: $10000.00 | PnL: 0.00%
+[2026-04-13T00:01:13.782Z] New 1 candle(s). Current price: 2188.31
+[2026-04-13T00:06:14.373Z] STATUS | FLAT | Trades: 0 (0W/0L) | Equity: $10000.00 | PnL: 0.00%
+[2026-04-13T00:06:14.373Z] STATUS | FLAT | Trades: 0 (0W/0L) | Equity: $10000.00 | PnL: 0.00%
